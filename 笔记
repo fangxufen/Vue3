@@ -1,0 +1,42 @@
+ vite + vue3.0
+ npm init vite@latest vue-vite -- --template vue
+
+ scss
+ npm install sass-loader sass -D
+
+ vue-router
+ npm install vue-router -S
+
+ vuex
+ npm install vuex -S
+
+ elment-ui
+ npm install element-plus -S
+
+ 按需引入()
+ (
+    import { ref,reactive} from 'vue';
+ )
+ npm install -D unplugin-vue-components unplugin-auto-import
+
+
+//  异步组件 按需加载组件
+npm install @vueuse/core
+//初始化样式
+npm install normalize.css -S
+
+// 数字滚动
+// npm install vue3-count-to -S
+npm install vue3-count-to --save
+
+// 按需引入，其他组件可以使用，部分反馈组件无法使用（loading无法使用）
+npm install unplugin-auto-import@latest unplugin-vue-components@latest --save-dev
+
+// 中英文翻译
+vue-i18n
+@intlify/vite-plugin-vue-i18n
+
+// 删除node_modules
+npm install rimraf -g
+
+rimraf node_modules
