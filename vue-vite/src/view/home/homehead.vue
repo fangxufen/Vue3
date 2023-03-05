@@ -12,7 +12,11 @@
                 <img src="/src/assets/image/head2.jpg" alt="">
                 <el-dropdown>
                     <span class="el-dropdown-link">
+<<<<<<< HEAD
                     <!-- {{userInfo.name}}<el-icon class="el-icon--right"><arrow-down /></el-icon> -->
+=======
+                    {{userInfo.name}}<el-icon class="el-icon--right"><arrow-down /></el-icon>
+>>>>>>> 3796b6426d02787b59700d1037e9d6419bdfc298
                     </span>
                     <template #dropdown>
                         <el-dropdown-menu>
@@ -52,8 +56,13 @@ const changelang=(item)=>{
 }
 
 
+<<<<<<< HEAD
 // const userInfo=computed(()=>store.state.home.userinfo)
 // console.log(userInfo)
+=======
+const userInfo=computed(()=>store.state.home.userinfo)
+console.log(userInfo)
+>>>>>>> 3796b6426d02787b59700d1037e9d6419bdfc298
 // username.value=userInfo.name
 
 

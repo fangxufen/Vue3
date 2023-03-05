@@ -135,7 +135,11 @@ router.beforeEach((to,from,next)=>{
     if(tokenStr){
         next()
     }else{
+<<<<<<< HEAD
         next()
+=======
+        next('/login')
+>>>>>>> 3796b6426d02787b59700d1037e9d6419bdfc298
     }
 })
 export default router
