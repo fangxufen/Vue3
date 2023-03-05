@@ -1,11 +1,11 @@
 <template>
     <div class="home-head">
-        <div class="home-head-title">{{$t('message.System')}}</div>
+        <div class="home-head-title">SMXY</div>
         <div></div>
         <div class="home-head-right">
             <div class="head-right-img" >
-                <img v-if="langindex==0" src="/src/assets/image/zhbg.png" @click="changelang('china')"/>
-                <img v-if="langindex==1" src="/src/assets/image/enbg.png" @click="changelang('english')"/>
+                <!-- <img v-if="langindex==0" src="/src/assets/image/zhbg.png" @click="changelang('china')"/>
+                <img v-if="langindex==1" src="/src/assets/image/enbg.png" @click="changelang('english')"/> -->
             </div>
 
             <div class="head-right-user">
@@ -16,8 +16,8 @@
                     </span>
                     <template #dropdown>
                         <el-dropdown-menu>
-                            <el-dropdown-item :icon="Plus" @click="btnlogout">{{$t('message.Logout')}}</el-dropdown-item>
-                            <el-dropdown-item :icon="CirclePlusFilled">{{$t('message.PersonalCenter')}}</el-dropdown-item>
+                            <el-dropdown-item :icon="Plus" @click="btnlogout">3333</el-dropdown-item>
+                            <el-dropdown-item :icon="CirclePlusFilled">222</el-dropdown-item>
                         </el-dropdown-menu>
                     </template>
                 </el-dropdown>
@@ -32,9 +32,9 @@ import {
   Plus,
 } from '@element-plus/icons-vue'
 import { useStore } from 'vuex';
-import { useI18n } from 'vue-i18n'
+// import { useI18n } from 'vue-i18n'
 
-const { locale } = useI18n()
+// const { locale } = useI18n()
 const router = useRouter()
 const store=useStore()
 

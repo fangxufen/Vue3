@@ -1,0 +1,32 @@
+export default{
+    state:{
+        couter:0,
+        couter2:5,
+        token:'',
+        userinfo:JSON.parse(sessionStorage.getItem('userInfo')),
+    },
+    getters:{
+        sum(state){
+            return state.couter+state.couter2
+        }
+    },
+    mutations:{
+        setstate(state,couter){
+            state.couter=couter
+        },
+        addcouter(state){
+            state.couter+=1
+        },
+        setToken(state,token){
+            state.token=token
+        },
+        setUserInfo(state,userinfo){
+            state.userinfo=userinfo
+        }
+    },
+    actions:{
+        btnactions(){
+            alert('staore=>btnactions')
+        }
+    }
+}

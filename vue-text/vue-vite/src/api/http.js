@@ -1,5 +1,9 @@
 import axios from 'axios'
 
+if(process.env.NODE_ENV==="development"){
+    // console.log(env.VITE_BASIC_API)
+    console.log(process.env.NODE_ENV)
+}
 // 创建axios实例
 export const instance=axios.create({
     baseURL:'/api',

@@ -1,5 +1,5 @@
  vite + vue3.0
- npm init vite@latest vue-vite -- --template vue
+ npm init vite@latest smxy-cms -- --template vue
 
  scss
  npm install sass-loader sass -D

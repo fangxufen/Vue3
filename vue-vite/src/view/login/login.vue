@@ -74,29 +74,29 @@ const submitForm=async formEl=>{
     if (!formEl) return;
     try{
         // 加密方式
-        loadingLog.value=true
-        const issha =await mytShaGet({login_id:formEl.login_id})
-        if(issha.encryption=='sha256'){
-            formLogin.password=sha256(formLogin.password)
-        }
-        // 获取token
-        const params=Object.assign({},formLogin,{access_key:'N9lboMmOzL'})
-        const istoken=await mytTokenPost(params)
-        // 存储token
-        store.commit('setToken',istoken.access_token)
-        sessionStorage.setItem('Token',istoken.access_token)
-        // 获取用户信息
-        const userInfo=await ylsgetUserInfo()
-        store.commit('setUserInfo',userInfo)
-        sessionStorage.setItem('userInfo', JSON.stringify(userInfo))
+        // loadingLog.value=true
+        // const issha =await mytShaGet({login_id:formEl.login_id})
+        // if(issha.encryption=='sha256'){
+        //     formLogin.password=sha256(formLogin.password)
+        // }
+        // // 获取token
+        // const params=Object.assign({},formLogin,{access_key:'N9lboMmOzL'})
+        // const istoken=await mytTokenPost(params)
+        // // 存储token
+        // store.commit('setToken',istoken.access_token)
+        // sessionStorage.setItem('Token',istoken.access_token)
+        // // 获取用户信息
+        // const userInfo=await ylsgetUserInfo()
+        // store.commit('setUserInfo',userInfo)
+        // sessionStorage.setItem('userInfo', JSON.stringify(userInfo))
 
         router.push('/home')
-        ElMessage({
-          message:'登录成功',
-          type:'success'
-        })
-        loadingLog.value=false
-        console.log(userInfo,456)
+        // ElMessage({
+        //   message:'登录成功',
+        //   type:'success'
+        // })
+        // loadingLog.value=false
+        // console.log(userInfo,456)
         
     }catch(error){
         console.log(error,666)  

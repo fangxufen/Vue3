@@ -135,7 +135,7 @@ router.beforeEach((to,from,next)=>{
     if(tokenStr){
         next()
     }else{
-        next('/login')
+        next()
     }
 })
 export default router

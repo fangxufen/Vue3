@@ -1,20 +1,21 @@
 <template>
-        <el-container class="home">
-            <el-header class="home-head">
-                <Homehead/>
-            </el-header>
-            <el-container class="home-con">
-              <router-view></router-view>
-            </el-container>
+    <el-container class="home">
+        <el-header class="home-head">
+            <Homehead/>
+        </el-header>
+        <el-container class="home-con">
+            <homecontent/>
         </el-container>
+    </el-container>
 </template>
+
 <script setup>
-import Homehead from './home/homehead.vue';
-
-
+import Homehead from './homehead.vue';
+import homecontent from './homecontent.vue';
 </script>
+
 <style lang="scss" scoped>
-    .home{
+.home{
         min-width: 1600px;
         // width: 100vh;
         height: 100vh;
